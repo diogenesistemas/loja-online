@@ -1,0 +1,59 @@
+@import url("header.css");
+
+body{
+margin: 0;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---Begin Header--- */
+
+header{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.search input{
+    height: 25px;
+    padding-left: 5px;
+}
+
+.search button{
+    background-color: #006172;
+    color: #fff;
+    border: none;
+    height: 31px;
+    cursor: pointer;
+}
+
+.search button:hover{
+    background-color: #09859a;
+    /* opacity: 0.7; */
+}
+
+.login a{
+    color: #8d8178;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login a::before{
+    content: "";
+    background-image: url("../img/header/user.png");
+    background-size: 24px; /* Desnecessário, a imagemjpa deve ter o tamanho correto */
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-left: -24px;
+    margin-top: -3px;
+
+    /* background-position: 7px 10px; */
+}
+
+/* ---End Header--- */
